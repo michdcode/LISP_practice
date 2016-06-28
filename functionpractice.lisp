@@ -23,3 +23,8 @@
     (if (= e 0)
         1
         (* b (power b (- e 1)))))
+
+(defun fibonacci (N);  function from http://www.cs.sfu.ca/CourseCentral/310/pwfong/Lisp/1/tutorial1.html
+    (if (or (zerop N) (= N 1))
+        1
+        (+ (fibonacci (- N 1)) (fibonacci (- N 2)))))
